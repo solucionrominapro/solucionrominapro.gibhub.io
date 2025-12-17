@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romina · Solución Digital Pro</title>
+    <style>
+        :root {
+            --bg: #0b0b10;
+            --card: #ffffff;
+            --primary: #a855f7; /* lila */
+            --secondary: #d1d5db; /* plateado */
+            --text: #111827;
+            --muted: #6b7280;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, Arial, sans-serif;
+            background: var(--bg);
+            color: white;
+        }
+
+        nav {
+            position: fixed;
+            top: 0; width: 100%;
+            background: rgba(255,255,255,0.95);
+            padding: 16px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        nav a { text-decoration: none; color: var(--text); font-weight: 500; margin-left: 20px; }
+
+        header, section { padding: 120px 10% 80px; }
+
+        header {
+            background: linear-gradient(135deg, #ffffff, #f5f3ff);
+            color: var(--text);
+            border-bottom-radius: 40px;
+            text-align: center;
+        }
+
+        h1 { font-size: 3rem; color: var(--text); }
+        h2 { font-size: 2.2rem; color: var(--primary); text-align: center; }
+
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 15px 35px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: var(--card);
+            color: var(--text);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        footer { text-align: center; padding: 40px; font-size: 0.9rem; color: var(--muted); }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div style="font-weight: bold; color: var(--primary);">ROMINA DIGITAL PRO</div>
+    <div>
+        <a href="#soluciones">Servicios</a>
+        <a href="https://wa.me/59892241473">WhatsApp</a>
+    </div>
+</nav>
+
+<header>
+    <h1>Estrategia y Automatización con IA</h1>
+    <p style="color: #6b7280; font-size: 1.2rem;">Soluciones digitales inteligentes para negocios que buscan escalar.</p>
+    <a href="https://wa.me/59892241473" class="btn">Hablar por WhatsApp</a>
+</header>
+
+<section id="soluciones">
+    <h2>Lo que hago por tu negocio</h2>
+    <div class="grid">
+        <div class="card">Automatización de Procesos</div>
+        <div class="card">Asistentes Virtuales IA</div>
+        <div class="card">Estrategia Digital Pro</div>
+    </div>
+</section>
+
+<footer>
+    © 2025 · Romina · Solución Digital Pro
+</footer>
+
+</body>
+</html>
